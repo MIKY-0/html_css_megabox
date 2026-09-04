@@ -132,23 +132,35 @@ header {
     line-height: 47px;
 }
 
-.b-box img {
+.loginn {
     display: flex;
     margin: 0 auto;
-    width: 324px;
-    height: 212px;
+    width: 140px;
+    height: 56px;
+    border: 1px solid #503396;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-top: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.loginn:hover {
+    text-decoration:underline;
 }
 
 #big {
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 70px;
+    font-weight: 100;
 }
 
 .b-box h4{
     display: flex;
     justify-content: center;
-    font-size: 50px;
+    font-size: 70px;
 }
 
 #small {
@@ -157,6 +169,8 @@ header {
     line-height: 53px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     flex-wrap: nowrap;
+    font-size: 18px;
+    padding-top: 15px;
 }
 
 .bora {
