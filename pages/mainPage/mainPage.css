@@ -6,22 +6,91 @@
 li {
   list-style: none;
 }
-header{
-    height: 100px;
-    background-color: antiquewhite;
-}
-body {
-}
 
 a {
   text-decoration: none;
 }
+
+/* 헤더 */
+header {
+  position: relative;
+  height: 91px;
+  width: 100%;
+  min-width: 1100px;
+  background-color: white;
+  border-bottom: 1px solid #390081;
+  z-index: 100;
+}
+.header-grid {
+  width: 1100px;
+  margin: 0 auto;
+  height: 90px;
+}
+.up-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  height: 30px;
+}
+.left-nav a {
+  text-decoration: none;
+  font-size: 13px;
+  margin-right: 17px;
+  color: #555;
+}
+.right-nav a {
+  text-decoration: none;
+  font-size: 13px;
+  margin-left: 17px;
+  color: #555;
+}
+/* main 메뉴 */
+.main-nav a {
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.nav3 {
+  display: flex;
+  gap: 50px;
+}
+.nav3 a {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.main-nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-img {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+.main-home {
+  width: 140px;
+  height: 47px;
+}
+
+
 /* 페이지 상단 */
 .main-top {
-  width: 100vw;
   height: 920px;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   padding: 50px 0;
   color: white;
 }
@@ -29,23 +98,23 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../images/image1.jpg");
+  background-image: url("images/image1.jpg");
   background-size: cover;
   background-position: center;
-  filter: blur(60px);
+  filter: blur(50px);
   z-index: 0;
 }
 .main-top::after {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 1;
 }
 .box-office {
   position: relative;
   z-index: 2;
-  max-width: 1100px;
+  width: 1100px;
   margin: 0 auto;
 }
 .title{
@@ -79,26 +148,28 @@ a {
   justify-content: center;
   gap: 10px;
 }
-.active button {
+.active button , .active a {
   height: 40px;
-  border-radius: 3px;
+  border-radius: 6px;
   color: white;
   font-weight: bold;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .like {
   width: 30%;
   background-color: black;
   border-radius: 1px solid white;
   padding: 0 10px;
+  flex: 1;
 }
 .reservation-btn {
   width: 60%;
   background-color: #037B94;
   border: none;
-}
-.reservation {
-  color: white;
+  flex: 2;
 }
 .info{
   height: 70px;
@@ -130,41 +201,54 @@ a {
 }
 
 
-/* 페이지 중상 */
+/* 페이지 중상 (혜택)*/
 .main-top-middle {
-  /* max-width: 1100px; */
-  /* position: relative; */
+  /* overflow: hidden; */
 }
 .membership { 
-  padding: 0 20%;
+  width: 1100px; 
+   margin: 0 auto;
   position: relative;
   z-index: 1;
-  bottom: -150px;
+  top: 100px;
 }
 .membership-cards {
   display: flex;
-  /* justify-content: space-between; */
 }
 .left {
-  margin-top: 30px;
+  /* width: 100%; */
+  flex: 0 0 70%;
+  margin : 30px 20px 0 0;
+  /* background-color: red; */
 }
-.membership-top {
-  display: flex;
-  justify-content: space-between;
-}
+
 .membership-info {
   display: flex;
   gap: 20px;
+}
+.membership-info > img {
+  width: 50%;
+  display: block;
 }
 .membership-ticket {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  letter-spacing: 0;
+}
+.membership-ticket h3 {
+  font-size: 22px;
+}
+.membership-ticket h1 {
+  font-size: 36px;
+  font-weight: 1000;
+}
+.membership-ticket > p {
+  margin-right: 110px
 }
 .membership-bottom {
   display: flex;
   gap: 20px;
-  width: 30%;
 }
 .membership-bottom img {
   border-radius: 10px;
@@ -176,34 +260,47 @@ a {
   font-size: 28px;
   color: #503396;
 }
-.membership-item {
+.member-item {
   left: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
 }
 .page-bar {
-  width: 80%;
+  width: 50%;
   height: 2px;
   background-color: #503396;
 }
+.member-item p {
+  display: flex;
+  gap: 10px;
+}
 .membership-menu{
-  padding: 0 20%;
-  width: 100vw;
-  height: 450px;
+  height: 350px;
   background-color: #503396;
   display: flex;
-  justify-content: space-evenly;
   align-items: center;
   margin-top: 30px;
+  gap: 100px;
 }
-.membership-menu::before{
+/* .membership-menu::before{
   position: absolute;
+  content: "";
   z-index: 0;
+} */
+.membership-menu > div:first-child {
+  margin-left: auto;
 }
-.membership-menu div {
+.membership-menu > div:last-child {
+  margin-right: auto;
+}
+.membership-menu  div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
   gap: 20px;
-  
 }
 .membership-menu p {
   color: white;
@@ -216,12 +313,16 @@ a {
 .main-middle {
   height: 860px;
   background-color: #252451;
-  padding: 50px 20% 0 20%;
   color: white;
+}
+.cu-title , .cu-area {
+  width: 1100px;
+  margin: 0 auto;
 }
 .cu-title {
   display: flex;
   justify-content: space-between;
+  padding-top: 50px;
 }
 .cu-title h2 {
   color: white;
@@ -234,7 +335,6 @@ a {
   margin-top: 30px;
   display: flex;
   gap: 60px;
-
 }
 .film-maincard {
   border-radius: 15px;
@@ -246,7 +346,28 @@ a {
 
 }
 .btns {
-
+  display: flex;
+  gap: 5px;
+  padding: 5px 0;
+  height: 60px;
+  font-size: 20px;
+}
+.detail {
+  background-color: #252451;
+  flex: 1;
+  border-radius: 5px;
+  border: 1px solid white;
+  color: white;
+  font-size: inherit;
+}
+.cu-reservation-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #037B94;
+  flex: 1;
+  color: white;
+  border-radius: 5px;
 }
 .film-info-area {
   display: flex;
@@ -278,6 +399,161 @@ li{
 }
 li img{
   border-radius: 15px;
+}
+
+
+/* 페이지 하단  */
+.bottom-container {
+  width: 1100px;
+  margin: 50px auto;
+}
+.bottom-container > h2 {
+  font-size: 32px;
+  color: #503396;
+  font-weight: 500;
+}
+.img-cards {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+.img-cards span {
+  position: absolute;
+  font-size: 40px;
+  color: rgb(187, 180, 180);
+}
+.left-span {
+  left: -40px;
+}
+.right-span {
+  right: -40px;
+}
+.img-cards img{
+  width: 170px;
+  height: 170px;
+  border-radius: 20px;
+}
+.notice {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+}
+.notice-mega {
+  flex: 1;
+  margin-left: 40px;
+}
+.notice-date{
+  display: flex;
+  gap: 30px;
+}
+.inq-container {
+  z-index: 1;
+  position: relative;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.inq-box {
+  max-width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+.last-img {
+    display: flex;
+    justify-content: center;
+    margin: 80px auto 0;
+    background-color: #916B47;
+    min-width: 1100px;
+}
+
+
+/* footer */
+footer {
+  margin-top: 150px;
+  height: 200px;
+  background-color: #f8f8fa;
+  width: 100%;
+  min-width: 1100px;
+}
+/* inner-foot */
+.inner-foot {
+  margin: auto;
+  width: 1100px;
+  max-width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+/* foot-tpo */
+.foot-top {
+  display: flex;
+  padding: 30px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-theater {
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  height: 30px;
+  width: 106px;
+  background-color: #f8f8fa;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.search-theater img {
+  width: 17px;
+  height: 17px;
+}
+
+/* foot-nav */
+.foot-nav {
+  display: flex;
+  gap: 13px;
+}
+.foot-nav a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #666;
+}
+.nav-bold {
+  color: black;
+}
+
+/* foot-info */
+.foot-info {
+  display: flex;
+  gap: 20px;
+}
+.foot-info img {
+  width: 150px;
+  height: 50px;
+}
+.foot-text {
+  font-size: 13px;
+  color: #444;
+}
+
+/* footer sns */
+.foot-link-sns {
+  display: flex;
+  gap: 10px;
+}
+.foot-link-sns .link-sns img {
+  width: 30px;
+  height: 30px;
+  background-color: #ccc;
+  border-radius: 50%;
+  padding: 3px;
+  color: white;
 }
 
 
