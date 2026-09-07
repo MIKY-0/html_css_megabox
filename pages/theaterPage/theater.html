@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>극장</title>
     <link rel="stylesheet" href="theater.css" />
-    <link rel="icon" type="image/png" href="logo_img/favicon.png?v=1.1">
   </head>
   <body>
     <header>
@@ -17,39 +16,47 @@
             <a href="">고객센터</a>
           </div>
           <div class="right-nav">
-            <a href="../loginPage/login.html">로그인</a>
-            <a href="../loginPage/login.html">회원가입</a>
-            <a href="">빠른예매</a>  <!-- /pages/reservePage/reservePage.html -->
+            <a href="login.html">로그인</a>
+            <a href="">회원가입</a>
+            <a href="">빠른예매</a>
           </div>
         </div>
         <div class="main-nav">
           <div class="main-nav-left">
             <a href="">
-              <img class="nav-img" src="logo_img/menu.png" alt="" />
+              <img class="nav-img" src="/pages/logo_img/menu.png" alt="" />
             </a>
             <a href="">
-              <img class="nav-img" src="logo_img/search.png" alt="" />
+              <img class="nav-img" src="/pages/logo_img/search.png" alt="" />
             </a>
           </div>
           <div class="nav3">
             <a href="">영화</a>
-            <a href="">예매</a> <!-- /pages/reservePage/reservePage.html -->
-            <a href="/pages/theaterPage/theater.html">극장</a>
+            <a href="">예매</a>
+            <div class="nav-dropdown">
+              <a href="" class="theater-menu">극장</a>
+              <div class="dropdown-menu">
+                <div class="dropdown-inner">
+                  <a class="drop-allt" href="allTheater.html"> 전체극장 </a>
+                  <a href="theater.html">특별관</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="/pages/mainPage/mainPage.html">
-            <img class="main-home" src="logo_img/home.png" alt="" />
+          <a href="">
+            <img class="main-home" src="/pages/logo_img/home.png" alt="" />
           </a>
           <div class="nav3">
             <a href="">이벤트</a>
-            <a href="">스토어</a> <!-- /pages/storepage/storePage.html -->
-            <a href="/pages/benefitPage/benefitPage.html">혜택</a>
+            <a href="">스코어</a>
+            <a href="">혜택</a>
           </div>
           <div class="main-nav-right">
             <a href="">
-              <img class="nav-img" src="logo_img/calendar.png" alt="" />
+              <img class="nav-img" src="/pages/logo_img/calendar.png" alt="" />
             </a>
             <a href="">
-              <img class="nav-img" src="logo_img/user.png" alt="" />
+              <img class="nav-img" src="/pages/logo_img/user.png" alt="" />
             </a>
           </div>
         </div>
@@ -58,11 +65,11 @@
 
     <section class="fixed">
       <div class="inner-fixed">
-        <a href=""><img class="home-icon" src="logo_img/homeicon.png" alt="" /></a>
+        <a href=""><img class="home-icon" src="/pages/logo_img/homeicon.png" alt="" /></a>
         <span class="arrow"> 〉</span>
-        <a href="">극장</a>
+        <a href="allTheater.html">극장</a>
         <span class="arrow"> 〉</span>
-        <a href="">특별관</a>
+        <a href="allTheater.html">특별관</a>
       </div>
     </section>
     <main>
@@ -168,13 +175,13 @@
             <a class="nav-bold" href="https://www.megabox.co.kr/support/privacy"><strong>개인정보처리방침</strong></a>
             <a href="https://jebo.joonganggroup.com/main">윤리경영</a>
           </ul>
-          <button class="search-theater">
-            <img src="logo_img/magnifer.png" alt="" />
+          <a href="" class="search-theater">
+            <img src="/pages/logo_img/search.png" alt="" />
             극장찾기
-          </button>
+          </a>
         </div>
         <div class="foot-info">
-          <img src="logo_img/footlogo.png" alt="" />
+          <img src="/pages/logo_img/footlogo.png" alt="" />
           <div class="foot-text">
             <p>
               서울특별시 강남구 테헤란로 87길 22 도심공항터미널 건물 408호 ARS 1544-0070 대표이메일
@@ -188,16 +195,16 @@
           </div>
           <div class="foot-link-sns">
             <a class="link-sns" href="https://www.youtube.com/onmegabox">
-              <img src="logo_img/youtube.png" alt="" />
+              <img src="/pages/logo_img/youtube.png" alt="" />
             </a>
             <a class="link-sns" href="https://www.instagram.com/megaboxon">
-              <img src="logo_img/instagram.png" alt="" />
+              <img src="/pages/logo_img/instagram.png" alt="" />
             </a>
             <a class="link-sns" href="https://www.facebook.com/megaboxon">
-              <img src="logo_img/facebook.png" alt="" />
+              <img src="/pages/logo_img/facebook.png" alt="" />
             </a>
             <a class="link-sns" href="">
-              <img src="logo_img/x.png" alt="https://x.com/megaboxon" />
+              <img src="/pages/logo_img/x.png" alt="https://x.com/megaboxon" />
             </a>
           </div>
         </div>
