@@ -122,6 +122,15 @@ header {
   padding-left: 286px;
   gap: 22px;
 }
+.dir{
+  padding-left: 150px;
+}
+.die{
+  padding-left: 590px;
+}
+.dib{
+   padding-left: 820px;
+}
 .dropdown-inner a {
   display: block;
   color: white;
