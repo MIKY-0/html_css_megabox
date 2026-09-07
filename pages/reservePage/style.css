@@ -376,6 +376,13 @@ header {
   color: #aaa;
 }
 
+.movie-list li.disabled .age-rating {
+  opacity: 0.5;
+}
+.movie-list li.disabled .btn-heart {
+  color: #eee;
+}
+
 .age-rating {
   width: 16px;
   height: 16px;
@@ -604,6 +611,7 @@ header {
   justify-content: space-between;
   padding: 0 5px;
   color: var(--mb-text-sub);
+  cursor: pointer;
 }
 
 .hours-list span.active {
