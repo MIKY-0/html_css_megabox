@@ -21,7 +21,7 @@ body {
 
 main {
   width: 100%;
-  height: 100vh-131px;
+  height: calc(100vh - 131px);
   color: var(--mb-text-main);
   background-color: #fafafa;
   font-size: 13px;
@@ -253,10 +253,15 @@ header {
   color: #e53e3e;
 }
 
+.date-list .date-item:nth-child(-n+6):hover {
+  border-bottom-color: var(--mb-purple);
+}
+
 .date-item.disabled {
   color: #ccc;
   cursor: default;
 }
+
 
 .btn-calendar {
   width: 4%;
@@ -409,7 +414,7 @@ header {
     justify-content: center;
     gap: 22px;
     padding: 10px 12px;
-    background-attachment: #fff;
+    background-color: #fff;
 }
 
 .movie-poster-tag {
@@ -469,14 +474,21 @@ header {
 /* 극장 목록 분할 및 하단 박스 */
 .theater-split {
   display: flex;
+  height: 320px;
   margin: 12px 20px;
 }
 .region-list {
     flex: 1;
+    height: 100%;
+    overflow-y: auto;
   background-color: #fff;
 }
+
+
 .theater-list {
   flex: 1;
+  height: 100%;
+  overflow-y: auto;
   border-left: 1px solid var(--mb-border);
 }
 
@@ -484,6 +496,16 @@ header {
 .theater-list li {
   padding: 4px 8px;
   cursor: pointer;
+}
+
+.region-list::-webkit-scrollbar,
+.theater-list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.region-list::-webkit-scrollbar-thumb,
+.theater-list::-webkit-scrollbar-thumb {
+  background: #ccc;
 }
 
 .region-list li.region-active {
@@ -662,6 +684,7 @@ header {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  cursor: pointer;
 }
 
 /* footer */
