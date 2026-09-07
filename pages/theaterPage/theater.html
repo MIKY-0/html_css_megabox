@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>극장</title>
     <link rel="stylesheet" href="theater.css" />
-    <link rel="icon" type="image/png" href="logo_img/favicon.png?v=1.1">
   </head>
   <body>
     <header>
@@ -13,43 +12,79 @@
         <div class="up-nav">
           <div class="left-nav">
             <a href="">VIP LOUNGE</a>
-            <a href="">멤버십</a>
+            <a href="../benefitPage/benefitPage.html">멤버십</a>
             <a href="">고객센터</a>
           </div>
           <div class="right-nav">
             <a href="../loginPage/login.html">로그인</a>
-            <a href="../loginPage/login.html">회원가입</a>
-            <a href="">빠른예매</a>  <!-- /pages/reservePage/reservePage.html -->
+            <a href="">회원가입</a>
+            <a href="">빠른예매</a>
           </div>
         </div>
         <div class="main-nav">
           <div class="main-nav-left">
             <a href="">
-              <img class="nav-img" src="logo_img/menu.png" alt="" />
+              <img class="nav-img" src="/pages/logo_img/menu.png" alt="" />
             </a>
             <a href="">
-              <img class="nav-img" src="logo_img/search.png" alt="" />
+              <img class="nav-img" src="/pages/logo_img/search.png" alt="" />
             </a>
           </div>
           <div class="nav3">
-            <a href="">영화</a>
-            <a href="">예매</a> <!-- /pages/reservePage/reservePage.html -->
-            <a href="/pages/theaterPage/theater.html">극장</a>
+            <a href="../mainPage/mainPage.html">영화</a>
+            <div class="nav-dropdown">
+              <a href="../reservePage/reservePage.html" class="theater-menu"> 예매 </a>
+              <div class="dropdown-menu">
+                <div class="dropdown-inner dir">
+                  <a href="../reservePage/reservePage.html"> 빠른예매 </a>
+                  <a href=""> 상영시간표 </a>
+                  <a href=""> 더 부티크 프라이빗 예매 </a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-dropdown">
+              <a href="../theaterPage/allTheater.html" class="theater-menu"> 극장 </a>
+              <div class="dropdown-menu">
+                <div class="dropdown-inner dit">
+                  <a href="/pages/theaterPage/allTheater.html"> 전체극장 </a>
+                  <a href="/pages/theaterPage/theater.html"> 특별관 </a>
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="/pages/mainPage/mainPage.html">
-            <img class="main-home" src="logo_img/home.png" alt="" />
+          <a href="../mainPage/mainPage.html">
+            <img class="main-home" src="/pages/logo_img/home.png" alt="메가박스" />
           </a>
+          <!-- 이벤트 / 스토어 / 혜택 -->
           <div class="nav3">
-            <a href="">이벤트</a>
-            <a href="">스토어</a> <!-- /pages/storepage/storePage.html -->
-            <a href="/pages/benefitPage/benefitPage.html">혜택</a>
+            <div class="nav-dropdown">
+              <a href="" class="theater-menu"> 이벤트</a>
+              <div class="dropdown-menu">
+                <div class="dropdown-inner die">
+                  <a href=""> 진행중 이벤트 </a>
+                  <a href=""> 지난 이벤트 </a>
+                  <a href=""> 당첨자발표 </a>
+                </div>
+              </div>
+            </div>
+            <a href="../storepage/storePage.html">스토어</a>
+            <div class="nav-dropdown">
+              <a href="../benefitPage/benefitPage.html" class="theater-menu"> 혜택 </a>
+              <div class="dropdown-menu">
+                <div class="dropdown-inner dib">
+                  <a href="../benefitPage/benefitPage.html"> 메가박스 멤버십 </a>
+                  <a href=""> 제휴/할인 </a>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- 오른쪽 -->
           <div class="main-nav-right">
             <a href="">
-              <img class="nav-img" src="logo_img/calendar.png" alt="" />
+              <img class="nav-img" src="/pages/logo_img/calendar.png" alt="달력" />
             </a>
             <a href="">
-              <img class="nav-img" src="logo_img/user.png" alt="" />
+              <img class="nav-img" src="/pages/logo_img/user.png" alt="마이페이지" />
             </a>
           </div>
         </div>
@@ -58,11 +93,11 @@
 
     <section class="fixed">
       <div class="inner-fixed">
-        <a href=""><img class="home-icon" src="logo_img/homeicon.png" alt="" /></a>
+        <a href=""><img class="home-icon" src="/pages/logo_img/homeicon.png" alt="" /></a>
         <span class="arrow"> 〉</span>
-        <a href="">극장</a>
+        <a href="allTheater.html">극장</a>
         <span class="arrow"> 〉</span>
-        <a href="">특별관</a>
+        <a href="theater.html">특별관</a>
       </div>
     </section>
     <main>
@@ -73,33 +108,33 @@
             <p>TECHNOLOGY</p>
           </div>
 
-          <a href="https://www.megabox.co.kr/specialtheater/dolby" class="card card1">
+          <a href="" class="card card1">
             <img class="title-logo1" src="theater_img/logo/titlelogo1.png" alt="" />
             <div class="card-p">
               <p>완벽한 영화 관람을 완성하는 하이엔드 시네마</p>
             </div>
           </a>
-          <a href="https://www.megabox.co.kr/specialtheater/dva" class="card card2">
+          <a href="" class="card card2">
             <img class="title-logo2" src="theater_img/logo/titlelogo2.png" alt="" />
             <div class="card-p">
               <p>돌비 시네마에 적용된 돌비 비전과 돌비 애트모스,</p>
               <p>리클라이너를 더한 프리미엄 클래스</p>
             </div>
           </a>
-          <a href="https://www.megabox.co.kr/specialtheater/megamx4d" class="card card3">
+          <a href="" class="card card3">
             <img class="title-logo3" src="theater_img/logo/titlelogo3.png" alt="" />
             <div class="card-p">
               <p>다이나믹 이펙트가 선사하는 새로운 영화 체험</p>
             </div>
           </a>
-          <a href="https://www.megabox.co.kr/specialtheater/megaled" class="card card4">
+          <a href="" class="card card4">
             <img class="title-logo4" src="theater_img/logo/titlelogo4.png" alt="" />
             <div class="card-p">
               <p>무한대의 명암비,</p>
               <p>완벽한 컬러 재현력</p>
             </div>
           </a>
-          <a href="https://www.megabox.co.kr/specialtheater/dolbyatmos" class="card card5">
+          <a href="" class="card card5">
             <img class="title-logo5" src="theater_img/logo/titlelogo5.png" alt="" />
             <div class="card-p">
               <p>차원이 다른 공간감과 디테일한 사운드</p>
@@ -110,21 +145,21 @@
           <div class="type">
             <p>LUXURY</p>
           </div>
-          <a href="https://www.megabox.co.kr/specialtheater/boutique" class="card card6">
+          <a href="" class="card card6">
             <img class="title-logo6" src="theater_img/logo/titlelogo6.png" alt="" />
             <div class="card-p">
               <p>오직 나와 소중한 사람들을 위한</p>
               <p>프라이빗한 극장 경험</p>
             </div>
           </a>
-          <a href="https://www.megabox.co.kr/specialtheater/boutique" class="card card7">
+          <a href="" class="card card7">
             <img class="title-logo7" src="theater_img/logo/titlelogo7.png" alt="" />
             <div class="card-p">
               <p>웰컴패키지가 더해진</p>
               <p>럭셔리한 공간 경험</p>
             </div>
           </a>
-          <a href="https://www.megabox.co.kr/specialtheater/boutique" class="card card8">
+          <a href="" class="card card8">
             <img class="title-logo8" src="theater_img/logo/titlelogo8.png" alt="" />
             <div class="card-p">
               <p>섬세하게 디자인된 감각적인</p>
@@ -136,14 +171,14 @@
           <div class="type">
             <p>COMFORT</p>
           </div>
-          <a href="https://www.megabox.co.kr/specialtheater/recliner" class="card card9">
+          <a href="" class="card card9">
             <img class="title-logo9" src="theater_img/logo/titlelogo9.png" alt="" />
             <div class="card-p">
               <p>맞춤형 리클라이닝 시스템이</p>
               <p>구현하는 극강의 편안함</p>
             </div>
           </a>
-          <a href="https://www.megabox.co.kr/specialtheater/comfort" class="card card10">
+          <a href="" class="card card10">
             <img class="title-logo10" src="theater_img/logo/titlelogo10.png" alt="" />
             <div class="card-p">
               <p>컴포트 체어로 누리는</p>
@@ -153,28 +188,29 @@
         </section>
       </div>
     </main>
+
     <footer>
       <div class="inner-foot">
         <div class="foot-top">
           <ul class="foot-nav">
-            <a href="https://www.megabox.co.kr/megaboxinfo">회사소개</a>
-            <a href="https://www.megabox.co.kr/recruit">인재채용</a>
-            <a href="https://www.megabox.co.kr/socialcontribution">사회공헌</a>
-            <a href="https://www.megabox.co.kr/partner">제휴/광고/부대사업문의</a>
-            <a href="https://www.megabox.co.kr/support/terms">이용약관</a>
-            <a class="nav-bold" href="https://www.megabox.co.kr/support/lcinfo"
+            <a href="">회사소개</a>
+            <a href="">인재채용</a>
+            <a href="">사회공헌</a>
+            <a href="">제휴/광고/부대사업문의</a>
+            <a href="">이용약관</a>
+            <a class="nav-bold" href=""
               ><strong>위치기반서비스 이용약관</strong></a
             >
-            <a class="nav-bold" href="https://www.megabox.co.kr/support/privacy"><strong>개인정보처리방침</strong></a>
+            <a class="nav-bold" href=""><strong>개인정보처리방침</strong></a>
             <a href="https://jebo.joonganggroup.com/main">윤리경영</a>
           </ul>
-          <button class="search-theater">
-            <img src="logo_img/magnifer.png" alt="" />
+          <a href="" class="search-theater">
+            <img src="/pages/logo_img/search.png" alt="" />
             극장찾기
-          </button>
+          </a>
         </div>
         <div class="foot-info">
-          <img src="logo_img/footlogo.png" alt="" />
+          <img src="/pages/logo_img/footlogo.png" alt="" />
           <div class="foot-text">
             <p>
               서울특별시 강남구 테헤란로 87길 22 도심공항터미널 건물 408호 ARS 1544-0070 대표이메일
@@ -188,16 +224,16 @@
           </div>
           <div class="foot-link-sns">
             <a class="link-sns" href="https://www.youtube.com/onmegabox">
-              <img src="logo_img/youtube.png" alt="" />
+              <img src="/pages/logo_img/youtube.png" alt="" />
             </a>
             <a class="link-sns" href="https://www.instagram.com/megaboxon">
-              <img src="logo_img/instagram.png" alt="" />
+              <img src="/pages/logo_img/instagram.png" alt="" />
             </a>
             <a class="link-sns" href="https://www.facebook.com/megaboxon">
-              <img src="logo_img/facebook.png" alt="" />
+              <img src="/pages/logo_img/facebook.png" alt="" />
             </a>
             <a class="link-sns" href="">
-              <img src="logo_img/x.png" alt="https://x.com/megaboxon" />
+              <img src="/pages/logo_img/x.png" alt="https://x.com/megaboxon" />
             </a>
           </div>
         </div>

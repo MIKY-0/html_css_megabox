@@ -9,6 +9,7 @@ li {
 
 a {
   text-decoration: none;
+  color: white;
 }
 
 /* ----------------헤더 ----------------*/
@@ -44,6 +45,7 @@ header {
   margin-left: 17px;
   color: #555;
 }
+
 /* main 메뉴 */
 .main-nav a {
   text-decoration: none;
@@ -331,17 +333,24 @@ header {
   height: 2px;
   background-color: #503396;
 }
-.member-item p {
+.membership-menu a {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .membership-menu{
   height: 350px;
   background-color: #503396;
   display: flex;
+  /* justify-content: center; */
   align-items: center;
   margin-top: 30px;
-  gap: 100px;
+  gap: 120px;
+}
+.membership-menu:hover {
+
 }
 /* .membership-menu::before{
   position: absolute;
@@ -358,13 +367,14 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
   gap: 20px;
 }
 .membership-menu p {
   color: white;
   font-size: 20px;
   font-weight: bold;
+  
 }
 
 
@@ -390,6 +400,9 @@ header {
 .cu-title h3 {
   color: gray;
 }
+.cu-title h3:hover{
+  border-bottom: 1px solid gray;
+}
 .cu-area {
   position: relative;
   margin-top: 30px;
@@ -411,7 +424,6 @@ header {
 }
 .film-maincard {
   border-radius: 15px;
-  
 }
 .film-area {
 
@@ -455,7 +467,9 @@ header {
 .content {
   margin-top: 20px;
 }
-
+.film-cards{
+  margin-top: 20px;
+}
 
 ul {
   display: flex;
@@ -470,6 +484,18 @@ li{
 }
 li img{
   border-radius: 15px;
+}
+.F {
+  position: relative;
+}
+.F > p{
+  position: absolute;
+  background-color: #DA3F31;
+  width: 15%;
+  height: 30px;
+  text-align: center;
+  top: -5px;
+  left: 10px;
 }
 
 
@@ -499,7 +525,7 @@ li img{
   left: -40px;
 }
 .right-span {
-  right: -40px;
+  right: -50px;
 }
 .card-item{
   width: 170px;
@@ -537,20 +563,33 @@ li img{
   align-items: center;
 }
 .notice-mega {
-  flex: 1;
+  flex: 1 ;
   margin-left: 40px;
+}
+.notice-mega span:hover {
+  cursor: pointer;
+  border-bottom: 1px solid ;
 }
 .notice-date{
   display: flex;
   gap: 30px;
 }
+.plus:hover {
+  cursor: pointer;
+
+}
 .inq-container {
-  z-index: 1;
   position: relative;
   margin-top: 80px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+.inq-box:hover {
+  cursor: pointer;
+}
+.inq-box span:hover {
+  border-bottom: 1px solid;
 }
 .inq-box {
   max-width: 130px;
@@ -560,6 +599,16 @@ li img{
   align-items: center;
   gap: 10px;
   text-align: center;
+}
+.inq-box  a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.inq-box p {
+  color: black;
 }
 .last-img {
     display: flex;
