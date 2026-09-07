@@ -390,6 +390,9 @@ header {
 .cu-title h3 {
   color: gray;
 }
+.cu-title h3:hover{
+  border-bottom: 1px solid gray;
+}
 .cu-area {
   position: relative;
   margin-top: 30px;
@@ -411,7 +414,6 @@ header {
 }
 .film-maincard {
   border-radius: 15px;
-  
 }
 .film-area {
 
@@ -455,7 +457,9 @@ header {
 .content {
   margin-top: 20px;
 }
-
+.film-cards{
+  margin-top: 20px;
+}
 
 ul {
   display: flex;
@@ -470,6 +474,18 @@ li{
 }
 li img{
   border-radius: 15px;
+}
+.F {
+  position: relative;
+}
+.F > p{
+  position: absolute;
+  background-color: #DA3F31;
+  width: 15%;
+  height: 30px;
+  text-align: center;
+  top: -5px;
+  left: 10px;
 }
 
 
@@ -537,8 +553,12 @@ li img{
   align-items: center;
 }
 .notice-mega {
-  flex: 1;
+  flex: 1 ;
   margin-left: 40px;
+}
+.notice-mega:hover {
+  cursor: pointer;
+  border-bottom: 1px solid ;
 }
 .notice-date{
   display: flex;
