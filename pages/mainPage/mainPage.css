@@ -332,8 +332,12 @@ header {
   height: 2px;
   background-color: #503396;
 }
-.member-item a {
-
+.membership-menu a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 .membership-menu{
   height: 350px;
@@ -342,7 +346,7 @@ header {
   /* justify-content: center; */
   align-items: center;
   margin-top: 30px;
-  gap: 100px;
+  gap: 120px;
 }
 .membership-menu:hover {
 
@@ -520,7 +524,7 @@ li img{
   left: -40px;
 }
 .right-span {
-  right: -40px;
+  right: -50px;
 }
 .card-item{
   width: 170px;
@@ -571,10 +575,9 @@ li img{
 }
 .plus:hover {
   cursor: pointer;
-  border-bottom: 1px solid;
+
 }
 .inq-container {
-  z-index: 1;
   position: relative;
   margin-top: 80px;
   display: flex;
@@ -595,6 +598,16 @@ li img{
   align-items: center;
   gap: 10px;
   text-align: center;
+}
+.inq-box  a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.inq-box p {
+  color: black;
 }
 .last-img {
     display: flex;
